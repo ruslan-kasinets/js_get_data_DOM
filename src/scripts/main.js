@@ -14,7 +14,9 @@ for (const country of allCountries) {
   }
 }
 
-averagePopulation = totalPopulation / count;
+if (count !== 0) {
+  averagePopulation = totalPopulation / count;
+}
 
 const formatTotal = new Intl.NumberFormat('en-US').format(totalPopulation);
 const formatAverage = new Intl.NumberFormat('en-US').format(averagePopulation);
